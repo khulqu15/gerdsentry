@@ -1,0 +1,7 @@
+{
+  "name": "gerd_sentry",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
