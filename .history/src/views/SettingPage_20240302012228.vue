@@ -1,0 +1,18 @@
+<template>
+    <dashboard-layout-vue title="Setting">
+      <div>
+        <div class="flex justify-center gap-4">
+          <div class="max-w-lg bg-base-100 p-8"></div>
+        </div>
+      </div>
+    </dashboard-layout-vue>
+  </template>
+  
+  <script setup lang="ts">
+  import DashboardLayoutVue from '@/layouts/DashboardLayout.vue'
+  import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+  import { onMounted, ref } from 'vue'
+  import { useRouter } from 'vue-router'
+  
+  const router = useRouter()
+  </script>
