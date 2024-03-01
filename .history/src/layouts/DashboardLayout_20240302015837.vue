@@ -3,7 +3,7 @@
       <ion-content :fullscreen="true">
         <div class="drawer lg:drawer-open text-base-content">
           <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-          <div class="drawer-content bg-base-300 min-h-screen ">
+          <div class="drawer-content bg-base-300">
             <div class="container lg:pl-4">
                 <div class="w-full pt-3 pb-1 px-3 rounded-b-2xl flex items-center justify-between bg-base-100">
                     <div class="flex items-center">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-6 px-4">
+                <div class="pt-6">
                     <slot></slot>
                 </div>
                 <div class="mt-6">
