@@ -44,146 +44,146 @@
   const router = useRouter()
   const question_data = ref([
     {
-        question: 'How often did you have a burning feeling behind your breastbone?',
+        question: 'Seberapa sering Anda mengalami perasaan terbakar di bagian belakang tulang Anda ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     }, // add question using checkbox
     {
-        question: 'How often did you have stomach contents moving upwards to your throath or mouth ?',
+        question: 'Seberapa sering Anda mengalami naiknya isi lambung ke arah tenggorokan atau mulut (regurgitasi) ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     },
     {
-        question: 'How often did you have a pain in center of the upper stomach ?',
+        question: 'Seberapa sering Anda mengalami nyeri ulu hati ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     },
     {
-        question: 'How often did you have nausea ?',
+        question: 'Seberapa sering Anda mengalami mual ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     },
     {
-        question: 'How often did you have difficulty getting a good night sleep because of your heartburn and/or regurgitation?',
+        question: 'Seberapa sering Anda mengalami kesulitan tidur malam oleh karena rasa terbakar di dada atau naiknya isi perut ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     },
     {
-        question: 'How often did you take additional medication for your heartburn and/or regurgitation other than what the physician told you to take? (such as Maalox)',
+        question: 'Seberapa sering Anda meminum obat tambahan untuk rasa terbakar di dada dan / naiknya isi perut, selain yang diberikan oleh dokter Anda (seperti obat maag yang dijual bebas) ?',
         type: 'radio',
         options: [
             {
                 value: '0',
-                label: '0 days'
+                label: '0 hari'
             },
             {
                 value: '1',
-                label: '1 days'
+                label: '1 hari'
             },
             {
                 value: '2',
-                label: '2-3 days'
+                label: '2-3 hari'
             },
             {
                 value: '3',
-                label: '4-7 days'
+                label: '4-7 hari'
             },
         ],
         value: [],
     }, // add question using textarea
     
     // {
-    //     question: 'Apakah anda merasa demam?',
+    //     question: 'Apakah Anda merasa demam?',
     //     type: 'checkbox',
     //     options: [
     //         {
@@ -198,7 +198,7 @@
     //     value: [],
     // }, // add question using textarea
     // {
-    //     question: 'Apakah anda merasa sesak nafas?',
+    //     question: 'Apakah Anda merasa sesak nafas?',
     //     type: 'textarea',
     //     value: []
     // }
