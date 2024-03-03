@@ -7,7 +7,7 @@
           <h1 class="text-xl font-bold mb-2">Count Data</h1>
           <!-- add description -->
           <p class="text-sm mb-4">This is the count of data in the system</p>
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-1 gap-3">
             <div class="w-full p-3 bg-primary rounded-xl" v-for="(item, index) in count_datas" :key="index">
               <div class="text-white text-sm font-bold">{{ item.title }}</div>
               <div class="text-white text-3xl font-bold">{{ item.value }}</div>
@@ -60,18 +60,6 @@ const count_datas = ref([
   },
   {
     title: 'Data Responden Kuisioner',
-    value: 0
-  },
-  {
-    title: 'Data Kadar Oksigen',
-    value: 0
-  },
-  {
-    title: 'Data Kadar Karbon Dioksida',
-    value: 0
-  },
-  {
-    title: 'Data Kadar Amonia',
     value: 0
   }
 ])
