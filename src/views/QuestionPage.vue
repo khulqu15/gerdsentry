@@ -8,27 +8,34 @@
                 <p class="text-sm mb 4">Please fill the quisionaire</p>
             </div>
             <div class="w-full p-4 bg-base-100 rounded-xl space-y-4">
-                <!-- question content about user healthy -->
-                <div v-for="(item, index) in question_data" :key="index">
-                    <div class="form_control">
-                        <p class="text font-semibold inline-block mb-4">{{ index + 1 }}. {{ item.question }}</p>
-                        <div v-if="item.type == 'radio'">
-                            <div v-for="(option, index) in item.options" :key="index" class="flex items-center gap-x-2 mb-2">
-                                <input type="radio" :value="option.value" v-model="item.value" class="radio">
-                                <label>{{ option.label }}</label>
+                <form @click="onSubmit($event)">
+                    <div v-for="(item, index) in question_data" :key="index">
+                        <div class="form_control">
+                            <p class="text font-semibold inline-block mb-4">{{ index + 1 }}. {{ item.question }}</p>
+                            <div v-if="item.type == 'radio'">
+                                <div v-for="(option, idx) in item.options" :key="idx" class="flex items-center gap-x-2 mb-2">
+                                    <input type="radio" :required="index == 0 ? 'true' : 'false'" :name="`radio-${index}`" :value="option.value" v-model="item.value" class="radio">
+                                    <label>{{ option.label }}</label>
+                                </div>
                             </div>
-                        </div>
-                        <div v-else-if="item.type == 'checkbox'">
-                            <div v-for="(option, index) in item.options" :key="index" class="flex items-center gap-x-2 mb-2">
-                                <input type="checkbox" :value="option.value" v-model="item.value" class="checkbox">
-                                <label>{{ option.label }}</label>
+                            <div v-else-if="item.type == 'checkbox'">
+                                <div v-for="(option, idx) in item.options" :key="idx" class="flex items-center gap-x-2 mb-2">
+                                    <input type="checkbox" required :name="`checkbox-${idx}`" :value="option.value" v-model="item.value" class="checkbox">
+                                    <label>{{ option.label }}</label>
+                                </div>
                             </div>
-                        </div>
-                        <div v-else-if="item.type == 'textarea'">
-                            <textarea v-model="item.value" class="textarea input input-bordered w-full text-base-content bg-base-200/30"></textarea>
+                            <div v-else-if="item.type == 'textarea'">
+                                <textarea v-model="item.value" :name="`textarea-${index}`" required class="textarea input input-bordered w-full text-base-content bg-base-200/30"></textarea>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- add checkbout button for seriously submit -->
+                    <div class="flex items-center my-8 gap-3">
+                        <input type="checkbox" required class="checkbox">
+                        <label class="text-sm">I'm seriously to submit this quisionaire</label>
+                    </div>
+                    <button class="btn btn-primary text-white">Submit</button>
+                </form>
             </div>
         </div>
       </div>
@@ -41,6 +48,10 @@
   import { onMounted, ref } from 'vue'
   import { useRouter } from 'vue-router'
   
+  function onSubmit(event: Event) {
+    router.push({name: 'Question'})
+  }
+
   const router = useRouter()
   const question_data = ref([
     {
