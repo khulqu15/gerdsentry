@@ -40,9 +40,9 @@
           <div class="drawer-side">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-              <li><a @click="$router.replace({name: 'Home'})" :class="{'bg-primary text-white': title == 'Dashboard'}">Dashboard</a></li>
-              <li><a @click="$router.replace({name: 'History'})" :class="{'bg-primary text-white': title == 'History'}">History Data</a></li>
-              <li><a @click="$router.replace({name: 'Setting'})" :class="{'bg-primary text-white': title == 'Setting'}">Pengaturan</a></li>
+              <li><a @click="$router.push({name: 'Home'})" :class="{'bg-primary text-white': title == 'Dashboard'}">Dashboard</a></li>
+              <li><a @click="$router.push({name: 'History'})" :class="{'bg-primary text-white': title == 'History'}">History Data</a></li>
+              <li><a @click="$router.push({name: 'Setting'})" :class="{'bg-primary text-white': title == 'Setting'}">Pengaturan</a></li>
             </ul>
           </div>
         </div>
