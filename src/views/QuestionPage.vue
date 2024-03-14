@@ -191,7 +191,69 @@
             },
         ],
         value: [],
-    }, // add question using textarea
+    }, 
+    {
+        question: "Menurunkan berat badan bila penderita obesitas atau menjaga berat badan sesuai dengan IMT ideal ?",
+        type: 'radio',
+        options: [
+            {
+                value: '0',
+                label: 'Tidak pernah'
+            }, 
+            {
+                value: '1',
+                label: 'Ya, Pernah'
+            }
+        ],
+        value: [],
+    },
+    {
+        question: "Meninggikan kepala ± 15-20 cm/ menjaga kepala agar tetap elevasi saat posisi berbaring ?",
+        type: 'radio',
+        options: [
+            {
+                value: '0',
+                label: 'Tidak pernah'
+            }, 
+            {
+                value: '1',
+                label: 'Ya, Pernah'
+            }
+        ],
+        value: [],
+    },
+    {
+        question: "Makan malam paling lambat 2 – 3 jam sebelum tidur ?",
+        type: 'radio',
+        options: [
+            {
+                value: '0',
+                label: 'Tidak pernah'
+            }, 
+            {
+                value: '1',
+                label: 'Ya, Pernah'
+            }
+        ],
+        value: [],
+    },
+    {
+        question: "Menghindari makanan yang dapat merangsang GERD seperti cokelat, minuman mengandung kafein, alkohol, dan makanan berlemak - asam - pedas ?",
+        type: 'radio',
+        options: [
+            {
+                value: '0',
+                label: 'Tidak pernah'
+            }, 
+            {
+                value: '1',
+                label: 'Ya'
+            }
+        ],
+        value: [],
+    },
+    
+    // add question using textarea
     
     // {
     //     question: 'Apakah Anda merasa demam?',
